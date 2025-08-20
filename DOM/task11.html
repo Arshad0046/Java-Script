@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+    <p id="p1"> this is paragraph</p>
+    <p id="p2"> this is another one</p>
+    </div>
+    <script>
+         const x=document.createElement('p');
+         const node=document.createTextNode('this is new');
+         x.appendChild(node);
+         const element=document.getElementById('div');
+         const child=document.getElementById('p1')
+         element.insertBefore(x,child);
+    </script>
+</body>
+</html>
